@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<coupled name="devstone-ho" class="xdevs.lib.tmp_journal.XmlStoneGenerator" host="fast0" mainPort="5000" auxPort="6000">
+	<atomic name="generator" class="xdevs.lib.performance.DevStoneGenerator" host="fast0" mainPort="5001" auxPort="6001">
+		<constructor-arg value="0.0"/>
+		<constructor-arg value="1.0"/>
+		<constructor-arg value="1"/>
+	</atomic>
+	<atomic name="A1_C4" class="xdevs.lib.performance.DevStoneAtomic" host="fast3" mainPort="5002" auxPort="6002">
+		<constructor-arg value="0.0"/>
+		<constructor-arg value="1.7996874383293127"/>
+		<constructor-arg value="1.9873740551165193"/>
+	</atomic>
+	<atomic name="A2_C4" class="xdevs.lib.performance.DevStoneAtomic" host="fast2" mainPort="5003" auxPort="6003">
+		<constructor-arg value="0.0"/>
+		<constructor-arg value="2.322615791376934"/>
+		<constructor-arg value="0.30608530193246186"/>
+	</atomic>
+	<atomic name="A3_C4" class="xdevs.lib.performance.DevStoneAtomic" host="slow0" mainPort="5004" auxPort="6004">
+		<constructor-arg value="0.0"/>
+		<constructor-arg value="1.9495386709823148"/>
+		<constructor-arg value="0.08399970097715959"/>
+	</atomic>
+	<atomic name="A4_C4" class="xdevs.lib.performance.DevStoneAtomic" host="slow1" mainPort="5005" auxPort="6005">
+		<constructor-arg value="0.0"/>
+		<constructor-arg value="1.6805723874240184"/>
+		<constructor-arg value="1.345296826043903"/>
+	</atomic>
+	<atomic name="A1_C3" class="xdevs.lib.performance.DevStoneAtomic" host="fast3" mainPort="5006" auxPort="6006">
+		<constructor-arg value="0.0"/>
+		<constructor-arg value="2.8164539386284257"/>
+		<constructor-arg value="2.599729479814771"/>
+	</atomic>
+	<atomic name="A2_C3" class="xdevs.lib.performance.DevStoneAtomic" host="fast0" mainPort="5007" auxPort="6007">
+		<constructor-arg value="0.0"/>
+		<constructor-arg value="1.1127012661842395"/>
+		<constructor-arg value="0.8896868874281156"/>
+	</atomic>
+	<atomic name="A3_C3" class="xdevs.lib.performance.DevStoneAtomic" host="fast0" mainPort="5008" auxPort="6008">
+		<constructor-arg value="0.0"/>
+		<constructor-arg value="0.1594552920773944"/>
+		<constructor-arg value="0.3035593532479084"/>
+	</atomic>
+	<atomic name="A4_C3" class="xdevs.lib.performance.DevStoneAtomic" host="slow1" mainPort="5009" auxPort="6009">
+		<constructor-arg value="0.0"/>
+		<constructor-arg value="1.0523817315473367"/>
+		<constructor-arg value="1.0035974262132283"/>
+	</atomic>
+	<atomic name="A1_C2" class="xdevs.lib.performance.DevStoneAtomic" host="fast1" mainPort="5010" auxPort="6010">
+		<constructor-arg value="0.0"/>
+		<constructor-arg value="2.9945753089455383"/>
+		<constructor-arg value="1.6818038249155023"/>
+	</atomic>
+	<atomic name="A2_C2" class="xdevs.lib.performance.DevStoneAtomic" host="slow3" mainPort="5011" auxPort="6011">
+		<constructor-arg value="0.0"/>
+		<constructor-arg value="2.182688386299227"/>
+		<constructor-arg value="2.3347805411696303"/>
+	</atomic>
+	<atomic name="A3_C2" class="xdevs.lib.performance.DevStoneAtomic" host="slow3" mainPort="5012" auxPort="6012">
+		<constructor-arg value="0.0"/>
+		<constructor-arg value="2.629321183041428"/>
+		<constructor-arg value="2.9753913110327526"/>
+	</atomic>
+	<atomic name="A4_C2" class="xdevs.lib.performance.DevStoneAtomic" host="slow2" mainPort="5013" auxPort="6013">
+		<constructor-arg value="0.0"/>
+		<constructor-arg value="0.9295496772904355"/>
+		<constructor-arg value="2.6691613826615246"/>
+	</atomic>
+	<atomic name="A1_C1" class="xdevs.lib.performance.DevStoneAtomic" host="fast1" mainPort="5014" auxPort="6014">
+		<constructor-arg value="0.0"/>
+		<constructor-arg value="1.2383928164451645"/>
+		<constructor-arg value="0.4915204101538875"/>
+	</atomic>
+	<atomic name="A2_C1" class="xdevs.lib.performance.DevStoneAtomic" host="slow2" mainPort="5015" auxPort="6015">
+		<constructor-arg value="0.0"/>
+		<constructor-arg value="2.252451703219066"/>
+		<constructor-arg value="2.1005609397450327"/>
+	</atomic>
+	<atomic name="A3_C1" class="xdevs.lib.performance.DevStoneAtomic" host="slow0" mainPort="5016" auxPort="6016">
+		<constructor-arg value="0.0"/>
+		<constructor-arg value="2.390744148301429"/>
+		<constructor-arg value="1.0833418373323558"/>
+	</atomic>
+	<atomic name="A4_C1" class="xdevs.lib.performance.DevStoneAtomic" host="slow0" mainPort="5017" auxPort="6017">
+		<constructor-arg value="0.0"/>
+		<constructor-arg value="2.776571722116459"/>
+		<constructor-arg value="1.6786598220063569"/>
+	</atomic>
+	<atomic name="A1_C0" class="xdevs.lib.performance.DevStoneAtomic" host="fast2" mainPort="5018" auxPort="6018">
+		<constructor-arg value="0.0"/>
+		<constructor-arg value="0.02497500326033908"/>
+		<constructor-arg value="2.8442986398049532"/>
+	</atomic>
+	<connection componentFrom="generator" classFrom="xdevs.lib.performance.DevStoneGenerator" portFrom="out" componentTo="A1_C4" classTo="xdevs.lib.performance.DevStoneAtomic" portTo="in"/>
+	<connection componentFrom="generator" classFrom="xdevs.lib.performance.DevStoneGenerator" portFrom="out" componentTo="A2_C4" classTo="xdevs.lib.performance.DevStoneAtomic" portTo="in"/>
+	<connection componentFrom="generator" classFrom="xdevs.lib.performance.DevStoneGenerator" portFrom="out" componentTo="A3_C4" classTo="xdevs.lib.performance.DevStoneAtomic" portTo="in"/>
+	<connection componentFrom="generator" classFrom="xdevs.lib.performance.DevStoneGenerator" portFrom="out" componentTo="A4_C4" classTo="xdevs.lib.performance.DevStoneAtomic" portTo="in"/>
+	<connection componentFrom="generator" classFrom="xdevs.lib.performance.DevStoneGenerator" portFrom="out" componentTo="A1_C3" classTo="xdevs.lib.performance.DevStoneAtomic" portTo="in"/>
+	<connection componentFrom="generator" classFrom="xdevs.lib.performance.DevStoneGenerator" portFrom="out" componentTo="A2_C3" classTo="xdevs.lib.performance.DevStoneAtomic" portTo="in"/>
+	<connection componentFrom="generator" classFrom="xdevs.lib.performance.DevStoneGenerator" portFrom="out" componentTo="A3_C3" classTo="xdevs.lib.performance.DevStoneAtomic" portTo="in"/>
+	<connection componentFrom="generator" classFrom="xdevs.lib.performance.DevStoneGenerator" portFrom="out" componentTo="A4_C3" classTo="xdevs.lib.performance.DevStoneAtomic" portTo="in"/>
+	<connection componentFrom="generator" classFrom="xdevs.lib.performance.DevStoneGenerator" portFrom="out" componentTo="A1_C2" classTo="xdevs.lib.performance.DevStoneAtomic" portTo="in"/>
+	<connection componentFrom="generator" classFrom="xdevs.lib.performance.DevStoneGenerator" portFrom="out" componentTo="A2_C2" classTo="xdevs.lib.performance.DevStoneAtomic" portTo="in"/>
+	<connection componentFrom="generator" classFrom="xdevs.lib.performance.DevStoneGenerator" portFrom="out" componentTo="A3_C2" classTo="xdevs.lib.performance.DevStoneAtomic" portTo="in"/>
+	<connection componentFrom="generator" classFrom="xdevs.lib.performance.DevStoneGenerator" portFrom="out" componentTo="A4_C2" classTo="xdevs.lib.performance.DevStoneAtomic" portTo="in"/>
+	<connection componentFrom="generator" classFrom="xdevs.lib.performance.DevStoneGenerator" portFrom="out" componentTo="A1_C1" classTo="xdevs.lib.performance.DevStoneAtomic" portTo="in"/>
+	<connection componentFrom="generator" classFrom="xdevs.lib.performance.DevStoneGenerator" portFrom="out" componentTo="A2_C1" classTo="xdevs.lib.performance.DevStoneAtomic" portTo="in"/>
+	<connection componentFrom="generator" classFrom="xdevs.lib.performance.DevStoneGenerator" portFrom="out" componentTo="A3_C1" classTo="xdevs.lib.performance.DevStoneAtomic" portTo="in"/>
+	<connection componentFrom="generator" classFrom="xdevs.lib.performance.DevStoneGenerator" portFrom="out" componentTo="A4_C1" classTo="xdevs.lib.performance.DevStoneAtomic" portTo="in"/>
+	<connection componentFrom="generator" classFrom="xdevs.lib.performance.DevStoneGenerator" portFrom="out" componentTo="A1_C0" classTo="xdevs.lib.performance.DevStoneAtomic" portTo="in"/>
+	<connection componentFrom="A1_C4" classFrom="xdevs.lib.performance.DevStoneAtomic" portFrom="out" componentTo="A2_C4" classTo="xdevs.lib.performance.DevStoneAtomic" portTo="in"/>
+	<connection componentFrom="A2_C4" classFrom="xdevs.lib.performance.DevStoneAtomic" portFrom="out" componentTo="A3_C4" classTo="xdevs.lib.performance.DevStoneAtomic" portTo="in"/>
+	<connection componentFrom="A3_C4" classFrom="xdevs.lib.performance.DevStoneAtomic" portFrom="out" componentTo="A4_C4" classTo="xdevs.lib.performance.DevStoneAtomic" portTo="in"/>
+	<connection componentFrom="A1_C3" classFrom="xdevs.lib.performance.DevStoneAtomic" portFrom="out" componentTo="A2_C3" classTo="xdevs.lib.performance.DevStoneAtomic" portTo="in"/>
+	<connection componentFrom="A2_C3" classFrom="xdevs.lib.performance.DevStoneAtomic" portFrom="out" componentTo="A3_C3" classTo="xdevs.lib.performance.DevStoneAtomic" portTo="in"/>
+	<connection componentFrom="A3_C3" classFrom="xdevs.lib.performance.DevStoneAtomic" portFrom="out" componentTo="A4_C3" classTo="xdevs.lib.performance.DevStoneAtomic" portTo="in"/>
+	<connection componentFrom="A1_C2" classFrom="xdevs.lib.performance.DevStoneAtomic" portFrom="out" componentTo="A2_C2" classTo="xdevs.lib.performance.DevStoneAtomic" portTo="in"/>
+	<connection componentFrom="A2_C2" classFrom="xdevs.lib.performance.DevStoneAtomic" portFrom="out" componentTo="A3_C2" classTo="xdevs.lib.performance.DevStoneAtomic" portTo="in"/>
+	<connection componentFrom="A3_C2" classFrom="xdevs.lib.performance.DevStoneAtomic" portFrom="out" componentTo="A4_C2" classTo="xdevs.lib.performance.DevStoneAtomic" portTo="in"/>
+	<connection componentFrom="A1_C1" classFrom="xdevs.lib.performance.DevStoneAtomic" portFrom="out" componentTo="A2_C1" classTo="xdevs.lib.performance.DevStoneAtomic" portTo="in"/>
+	<connection componentFrom="A2_C1" classFrom="xdevs.lib.performance.DevStoneAtomic" portFrom="out" componentTo="A3_C1" classTo="xdevs.lib.performance.DevStoneAtomic" portTo="in"/>
+	<connection componentFrom="A3_C1" classFrom="xdevs.lib.performance.DevStoneAtomic" portFrom="out" componentTo="A4_C1" classTo="xdevs.lib.performance.DevStoneAtomic" portTo="in"/>
+</coupled>
