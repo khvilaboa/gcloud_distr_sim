@@ -1,0 +1,129 @@
+
+---
+apiVersion: v1
+kind: Pod
+metadata:
+  name: fast0
+  labels:
+    app: distributed-devstone
+spec:
+  containers:
+    - name: fast0-container
+      image: khenares/distributed-devstone-xdevs-java
+      command: ["/bin/sleep"]
+      args: ["infinity"]
+      ports:
+        - name: coupled-main
+          containerPort: 5000
+          protocol: TCP
+        - name: coupled-aux
+          containerPort: 6000
+          protocol: TCP
+        - name: a1-c1-main
+          containerPort: 5008
+          protocol: TCP
+        - name: a1-c1-aux
+          containerPort: 6008
+          protocol: TCP
+        - name: a1-c2-main
+          containerPort: 5005
+          protocol: TCP
+        - name: a1-c2-aux
+          containerPort: 6005
+          protocol: TCP
+        - name: a2-c3-main
+          containerPort: 5003
+          protocol: TCP
+        - name: a2-c3-aux
+          containerPort: 6003
+          protocol: TCP
+        - name: generator-main
+          containerPort: 5001
+          protocol: TCP
+        - name: generator-aux
+          containerPort: 6001
+          protocol: TCP
+---
+apiVersion: v1
+kind: Pod
+metadata:
+  name: fast1
+  labels:
+    app: distributed-devstone
+spec:
+  containers:
+    - name: fast1-container
+      image: khenares/distributed-devstone-xdevs-java
+      command: ["/bin/sleep"]
+      args: ["infinity"]
+      ports:
+        - name: a1-c0-main
+          containerPort: 5011
+          protocol: TCP
+        - name: a1-c0-aux
+          containerPort: 6011
+          protocol: TCP
+        - name: a1-c3-main
+          containerPort: 5002
+          protocol: TCP
+        - name: a1-c3-aux
+          containerPort: 6002
+          protocol: TCP
+---
+apiVersion: v1
+kind: Pod
+metadata:
+  name: slow0
+  labels:
+    app: distributed-devstone
+spec:
+  containers:
+    - name: slow0-container
+      image: khenares/distributed-devstone-xdevs-java
+      command: ["/bin/sleep"]
+      args: ["infinity"]
+      ports:
+        - name: a2-c1-main
+          containerPort: 5009
+          protocol: TCP
+        - name: a2-c1-aux
+          containerPort: 6009
+          protocol: TCP
+        - name: a3-c1-main
+          containerPort: 5010
+          protocol: TCP
+        - name: a3-c1-aux
+          containerPort: 6010
+          protocol: TCP
+        - name: a3-c3-main
+          containerPort: 5004
+          protocol: TCP
+        - name: a3-c3-aux
+          containerPort: 6004
+          protocol: TCP
+---
+apiVersion: v1
+kind: Pod
+metadata:
+  name: slow1
+  labels:
+    app: distributed-devstone
+spec:
+  containers:
+    - name: slow1-container
+      image: khenares/distributed-devstone-xdevs-java
+      command: ["/bin/sleep"]
+      args: ["infinity"]
+      ports:
+        - name: a2-c2-main
+          containerPort: 5006
+          protocol: TCP
+        - name: a2-c2-aux
+          containerPort: 6006
+          protocol: TCP
+        - name: a3-c2-main
+          containerPort: 5007
+          protocol: TCP
+        - name: a3-c2-aux
+          containerPort: 6007
+          protocol: TCP

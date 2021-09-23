@@ -1,0 +1,1315 @@
+
+---
+apiVersion: v1
+kind: Pod
+metadata:
+  name: fast0
+  labels:
+    app: distributed-devstone
+spec:
+  nodeName: gke-c1-default-pool-71129266-2b5t
+  containers:
+    - name: fast0-container
+      image: khenares/distributed-devstone-xdevs-java
+      command: ["/bin/sleep"]
+      args: ["infinity"]
+      ports:
+        - name: coupled-main
+          containerPort: 5000
+          protocol: TCP
+        - name: coupled-aux
+          containerPort: 6000
+          protocol: TCP
+        - name: a10-c13-main
+          containerPort: 5025
+          protocol: TCP
+        - name: a10-c13-aux
+          containerPort: 6025
+          protocol: TCP
+        - name: a10-c5-main
+          containerPort: 5137
+          protocol: TCP
+        - name: a10-c5-aux
+          containerPort: 6137
+          protocol: TCP
+        - name: a11-c6-main
+          containerPort: 5124
+          protocol: TCP
+        - name: a11-c6-aux
+          containerPort: 6124
+          protocol: TCP
+        - name: a12-c2-main
+          containerPort: 5181
+          protocol: TCP
+        - name: a12-c2-aux
+          containerPort: 6181
+          protocol: TCP
+        - name: a13-c5-main
+          containerPort: 5140
+          protocol: TCP
+        - name: a13-c5-aux
+          containerPort: 6140
+          protocol: TCP
+        - name: a14-c14-main
+          containerPort: 5015
+          protocol: TCP
+        - name: a14-c14-aux
+          containerPort: 6015
+          protocol: TCP
+        - name: a14-c6-main
+          containerPort: 5127
+          protocol: TCP
+        - name: a14-c6-aux
+          containerPort: 6127
+          protocol: TCP
+        - name: a14-c9-main
+          containerPort: 5085
+          protocol: TCP
+        - name: a14-c9-aux
+          containerPort: 6085
+          protocol: TCP
+        - name: a1-c11-main
+          containerPort: 5044
+          protocol: TCP
+        - name: a1-c11-aux
+          containerPort: 6044
+          protocol: TCP
+        - name: a1-c12-main
+          containerPort: 5030
+          protocol: TCP
+        - name: a1-c12-aux
+          containerPort: 6030
+          protocol: TCP
+        - name: a1-c14-main
+          containerPort: 5002
+          protocol: TCP
+        - name: a1-c14-aux
+          containerPort: 6002
+          protocol: TCP
+        - name: a1-c3-main
+          containerPort: 5156
+          protocol: TCP
+        - name: a1-c3-aux
+          containerPort: 6156
+          protocol: TCP
+        - name: a2-c1-main
+          containerPort: 5185
+          protocol: TCP
+        - name: a2-c1-aux
+          containerPort: 6185
+          protocol: TCP
+        - name: a2-c11-main
+          containerPort: 5045
+          protocol: TCP
+        - name: a2-c11-aux
+          containerPort: 6045
+          protocol: TCP
+        - name: a2-c2-main
+          containerPort: 5171
+          protocol: TCP
+        - name: a2-c2-aux
+          containerPort: 6171
+          protocol: TCP
+        - name: a2-c3-main
+          containerPort: 5157
+          protocol: TCP
+        - name: a2-c3-aux
+          containerPort: 6157
+          protocol: TCP
+        - name: a2-c4-main
+          containerPort: 5143
+          protocol: TCP
+        - name: a2-c4-aux
+          containerPort: 6143
+          protocol: TCP
+        - name: a3-c10-main
+          containerPort: 5060
+          protocol: TCP
+        - name: a3-c10-aux
+          containerPort: 6060
+          protocol: TCP
+        - name: a3-c12-main
+          containerPort: 5032
+          protocol: TCP
+        - name: a3-c12-aux
+          containerPort: 6032
+          protocol: TCP
+        - name: a3-c13-main
+          containerPort: 5018
+          protocol: TCP
+        - name: a3-c13-aux
+          containerPort: 6018
+          protocol: TCP
+        - name: a3-c3-main
+          containerPort: 5158
+          protocol: TCP
+        - name: a3-c3-aux
+          containerPort: 6158
+          protocol: TCP
+        - name: a4-c12-main
+          containerPort: 5033
+          protocol: TCP
+        - name: a4-c12-aux
+          containerPort: 6033
+          protocol: TCP
+        - name: a5-c14-main
+          containerPort: 5006
+          protocol: TCP
+        - name: a5-c14-aux
+          containerPort: 6006
+          protocol: TCP
+        - name: a5-c8-main
+          containerPort: 5090
+          protocol: TCP
+        - name: a5-c8-aux
+          containerPort: 6090
+          protocol: TCP
+        - name: a6-c10-main
+          containerPort: 5063
+          protocol: TCP
+        - name: a6-c10-aux
+          containerPort: 6063
+          protocol: TCP
+        - name: a7-c9-main
+          containerPort: 5078
+          protocol: TCP
+        - name: a7-c9-aux
+          containerPort: 6078
+          protocol: TCP
+        - name: a8-c12-main
+          containerPort: 5037
+          protocol: TCP
+        - name: a8-c12-aux
+          containerPort: 6037
+          protocol: TCP
+        - name: a8-c13-main
+          containerPort: 5023
+          protocol: TCP
+        - name: a8-c13-aux
+          containerPort: 6023
+          protocol: TCP
+        - name: a8-c2-main
+          containerPort: 5177
+          protocol: TCP
+        - name: a8-c2-aux
+          containerPort: 6177
+          protocol: TCP
+        - name: a8-c3-main
+          containerPort: 5163
+          protocol: TCP
+        - name: a8-c3-aux
+          containerPort: 6163
+          protocol: TCP
+        - name: generator-main
+          containerPort: 5001
+          protocol: TCP
+        - name: generator-aux
+          containerPort: 6001
+          protocol: TCP
+---
+apiVersion: v1
+kind: Pod
+metadata:
+  name: fast1
+  labels:
+    app: distributed-devstone
+spec:
+  nodeName: gke-c1-default-pool-71129266-7zn0
+  containers:
+    - name: fast1-container
+      image: khenares/distributed-devstone-xdevs-java
+      command: ["/bin/sleep"]
+      args: ["infinity"]
+      ports:
+        - name: a10-c14-main
+          containerPort: 5011
+          protocol: TCP
+        - name: a10-c14-aux
+          containerPort: 6011
+          protocol: TCP
+        - name: a10-c4-main
+          containerPort: 5151
+          protocol: TCP
+        - name: a10-c4-aux
+          containerPort: 6151
+          protocol: TCP
+        - name: a10-c6-main
+          containerPort: 5123
+          protocol: TCP
+        - name: a10-c6-aux
+          containerPort: 6123
+          protocol: TCP
+        - name: a10-c7-main
+          containerPort: 5109
+          protocol: TCP
+        - name: a10-c7-aux
+          containerPort: 6109
+          protocol: TCP
+        - name: a12-c10-main
+          containerPort: 5069
+          protocol: TCP
+        - name: a12-c10-aux
+          containerPort: 6069
+          protocol: TCP
+        - name: a12-c12-main
+          containerPort: 5041
+          protocol: TCP
+        - name: a12-c12-aux
+          containerPort: 6041
+          protocol: TCP
+        - name: a12-c3-main
+          containerPort: 5167
+          protocol: TCP
+        - name: a12-c3-aux
+          containerPort: 6167
+          protocol: TCP
+        - name: a13-c3-main
+          containerPort: 5168
+          protocol: TCP
+        - name: a13-c3-aux
+          containerPort: 6168
+          protocol: TCP
+        - name: a14-c8-main
+          containerPort: 5099
+          protocol: TCP
+        - name: a14-c8-aux
+          containerPort: 6099
+          protocol: TCP
+        - name: a1-c4-main
+          containerPort: 5142
+          protocol: TCP
+        - name: a1-c4-aux
+          containerPort: 6142
+          protocol: TCP
+        - name: a2-c13-main
+          containerPort: 5017
+          protocol: TCP
+        - name: a2-c13-aux
+          containerPort: 6017
+          protocol: TCP
+        - name: a2-c5-main
+          containerPort: 5129
+          protocol: TCP
+        - name: a2-c5-aux
+          containerPort: 6129
+          protocol: TCP
+        - name: a2-c7-main
+          containerPort: 5101
+          protocol: TCP
+        - name: a2-c7-aux
+          containerPort: 6101
+          protocol: TCP
+        - name: a3-c5-main
+          containerPort: 5130
+          protocol: TCP
+        - name: a3-c5-aux
+          containerPort: 6130
+          protocol: TCP
+        - name: a3-c8-main
+          containerPort: 5088
+          protocol: TCP
+        - name: a3-c8-aux
+          containerPort: 6088
+          protocol: TCP
+        - name: a4-c1-main
+          containerPort: 5187
+          protocol: TCP
+        - name: a4-c1-aux
+          containerPort: 6187
+          protocol: TCP
+        - name: a4-c11-main
+          containerPort: 5047
+          protocol: TCP
+        - name: a4-c11-aux
+          containerPort: 6047
+          protocol: TCP
+        - name: a4-c14-main
+          containerPort: 5005
+          protocol: TCP
+        - name: a4-c14-aux
+          containerPort: 6005
+          protocol: TCP
+        - name: a5-c11-main
+          containerPort: 5048
+          protocol: TCP
+        - name: a5-c11-aux
+          containerPort: 6048
+          protocol: TCP
+        - name: a5-c3-main
+          containerPort: 5160
+          protocol: TCP
+        - name: a5-c3-aux
+          containerPort: 6160
+          protocol: TCP
+        - name: a6-c13-main
+          containerPort: 5021
+          protocol: TCP
+        - name: a6-c13-aux
+          containerPort: 6021
+          protocol: TCP
+        - name: a6-c9-main
+          containerPort: 5077
+          protocol: TCP
+        - name: a6-c9-aux
+          containerPort: 6077
+          protocol: TCP
+        - name: a7-c10-main
+          containerPort: 5064
+          protocol: TCP
+        - name: a7-c10-aux
+          containerPort: 6064
+          protocol: TCP
+        - name: a7-c11-main
+          containerPort: 5050
+          protocol: TCP
+        - name: a7-c11-aux
+          containerPort: 6050
+          protocol: TCP
+        - name: a7-c13-main
+          containerPort: 5022
+          protocol: TCP
+        - name: a7-c13-aux
+          containerPort: 6022
+          protocol: TCP
+        - name: a7-c2-main
+          containerPort: 5176
+          protocol: TCP
+        - name: a7-c2-aux
+          containerPort: 6176
+          protocol: TCP
+        - name: a7-c5-main
+          containerPort: 5134
+          protocol: TCP
+        - name: a7-c5-aux
+          containerPort: 6134
+          protocol: TCP
+        - name: a8-c4-main
+          containerPort: 5149
+          protocol: TCP
+        - name: a8-c4-aux
+          containerPort: 6149
+          protocol: TCP
+        - name: a8-c7-main
+          containerPort: 5107
+          protocol: TCP
+        - name: a8-c7-aux
+          containerPort: 6107
+          protocol: TCP
+        - name: a9-c4-main
+          containerPort: 5150
+          protocol: TCP
+        - name: a9-c4-aux
+          containerPort: 6150
+          protocol: TCP
+---
+apiVersion: v1
+kind: Pod
+metadata:
+  name: fast2
+  labels:
+    app: distributed-devstone
+spec:
+  nodeName: gke-c1-default-pool-71129266-j3mg
+  containers:
+    - name: fast2-container
+      image: khenares/distributed-devstone-xdevs-java
+      command: ["/bin/sleep"]
+      args: ["infinity"]
+      ports:
+        - name: a10-c3-main
+          containerPort: 5165
+          protocol: TCP
+        - name: a10-c3-aux
+          containerPort: 6165
+          protocol: TCP
+        - name: a11-c1-main
+          containerPort: 5194
+          protocol: TCP
+        - name: a11-c1-aux
+          containerPort: 6194
+          protocol: TCP
+        - name: a12-c5-main
+          containerPort: 5139
+          protocol: TCP
+        - name: a12-c5-aux
+          containerPort: 6139
+          protocol: TCP
+        - name: a12-c7-main
+          containerPort: 5111
+          protocol: TCP
+        - name: a12-c7-aux
+          containerPort: 6111
+          protocol: TCP
+        - name: a13-c13-main
+          containerPort: 5028
+          protocol: TCP
+        - name: a13-c13-aux
+          containerPort: 6028
+          protocol: TCP
+        - name: a13-c4-main
+          containerPort: 5154
+          protocol: TCP
+        - name: a13-c4-aux
+          containerPort: 6154
+          protocol: TCP
+        - name: a1-c0-main
+          containerPort: 5198
+          protocol: TCP
+        - name: a1-c0-aux
+          containerPort: 6198
+          protocol: TCP
+        - name: a1-c1-main
+          containerPort: 5184
+          protocol: TCP
+        - name: a1-c1-aux
+          containerPort: 6184
+          protocol: TCP
+        - name: a1-c2-main
+          containerPort: 5170
+          protocol: TCP
+        - name: a1-c2-aux
+          containerPort: 6170
+          protocol: TCP
+        - name: a1-c5-main
+          containerPort: 5128
+          protocol: TCP
+        - name: a1-c5-aux
+          containerPort: 6128
+          protocol: TCP
+        - name: a2-c8-main
+          containerPort: 5087
+          protocol: TCP
+        - name: a2-c8-aux
+          containerPort: 6087
+          protocol: TCP
+        - name: a3-c1-main
+          containerPort: 5186
+          protocol: TCP
+        - name: a3-c1-aux
+          containerPort: 6186
+          protocol: TCP
+        - name: a3-c14-main
+          containerPort: 5004
+          protocol: TCP
+        - name: a3-c14-aux
+          containerPort: 6004
+          protocol: TCP
+        - name: a3-c6-main
+          containerPort: 5116
+          protocol: TCP
+        - name: a3-c6-aux
+          containerPort: 6116
+          protocol: TCP
+        - name: a4-c13-main
+          containerPort: 5019
+          protocol: TCP
+        - name: a4-c13-aux
+          containerPort: 6019
+          protocol: TCP
+        - name: a4-c2-main
+          containerPort: 5173
+          protocol: TCP
+        - name: a4-c2-aux
+          containerPort: 6173
+          protocol: TCP
+        - name: a4-c6-main
+          containerPort: 5117
+          protocol: TCP
+        - name: a4-c6-aux
+          containerPort: 6117
+          protocol: TCP
+        - name: a4-c7-main
+          containerPort: 5103
+          protocol: TCP
+        - name: a4-c7-aux
+          containerPort: 6103
+          protocol: TCP
+        - name: a4-c8-main
+          containerPort: 5089
+          protocol: TCP
+        - name: a4-c8-aux
+          containerPort: 6089
+          protocol: TCP
+        - name: a5-c4-main
+          containerPort: 5146
+          protocol: TCP
+        - name: a5-c4-aux
+          containerPort: 6146
+          protocol: TCP
+        - name: a5-c5-main
+          containerPort: 5132
+          protocol: TCP
+        - name: a5-c5-aux
+          containerPort: 6132
+          protocol: TCP
+        - name: a6-c14-main
+          containerPort: 5007
+          protocol: TCP
+        - name: a6-c14-aux
+          containerPort: 6007
+          protocol: TCP
+        - name: a6-c3-main
+          containerPort: 5161
+          protocol: TCP
+        - name: a6-c3-aux
+          containerPort: 6161
+          protocol: TCP
+        - name: a7-c3-main
+          containerPort: 5162
+          protocol: TCP
+        - name: a7-c3-aux
+          containerPort: 6162
+          protocol: TCP
+        - name: a7-c8-main
+          containerPort: 5092
+          protocol: TCP
+        - name: a7-c8-aux
+          containerPort: 6092
+          protocol: TCP
+        - name: a8-c10-main
+          containerPort: 5065
+          protocol: TCP
+        - name: a8-c10-aux
+          containerPort: 6065
+          protocol: TCP
+        - name: a8-c8-main
+          containerPort: 5093
+          protocol: TCP
+        - name: a8-c8-aux
+          containerPort: 6093
+          protocol: TCP
+        - name: a9-c14-main
+          containerPort: 5010
+          protocol: TCP
+        - name: a9-c14-aux
+          containerPort: 6010
+          protocol: TCP
+        - name: a9-c9-main
+          containerPort: 5080
+          protocol: TCP
+        - name: a9-c9-aux
+          containerPort: 6080
+          protocol: TCP
+---
+apiVersion: v1
+kind: Pod
+metadata:
+  name: fast3
+  labels:
+    app: distributed-devstone
+spec:
+  nodeName: gke-c1-default-pool-71129266-l8bn
+  containers:
+    - name: fast3-container
+      image: khenares/distributed-devstone-xdevs-java
+      command: ["/bin/sleep"]
+      args: ["infinity"]
+      ports:
+        - name: a10-c11-main
+          containerPort: 5053
+          protocol: TCP
+        - name: a10-c11-aux
+          containerPort: 6053
+          protocol: TCP
+        - name: a10-c12-main
+          containerPort: 5039
+          protocol: TCP
+        - name: a10-c12-aux
+          containerPort: 6039
+          protocol: TCP
+        - name: a11-c13-main
+          containerPort: 5026
+          protocol: TCP
+        - name: a11-c13-aux
+          containerPort: 6026
+          protocol: TCP
+        - name: a11-c5-main
+          containerPort: 5138
+          protocol: TCP
+        - name: a11-c5-aux
+          containerPort: 6138
+          protocol: TCP
+        - name: a12-c13-main
+          containerPort: 5027
+          protocol: TCP
+        - name: a12-c13-aux
+          containerPort: 6027
+          protocol: TCP
+        - name: a12-c9-main
+          containerPort: 5083
+          protocol: TCP
+        - name: a12-c9-aux
+          containerPort: 6083
+          protocol: TCP
+        - name: a13-c2-main
+          containerPort: 5182
+          protocol: TCP
+        - name: a13-c2-aux
+          containerPort: 6182
+          protocol: TCP
+        - name: a1-c13-main
+          containerPort: 5016
+          protocol: TCP
+        - name: a1-c13-aux
+          containerPort: 6016
+          protocol: TCP
+        - name: a1-c8-main
+          containerPort: 5086
+          protocol: TCP
+        - name: a1-c8-aux
+          containerPort: 6086
+          protocol: TCP
+        - name: a1-c9-main
+          containerPort: 5072
+          protocol: TCP
+        - name: a1-c9-aux
+          containerPort: 6072
+          protocol: TCP
+        - name: a2-c6-main
+          containerPort: 5115
+          protocol: TCP
+        - name: a2-c6-aux
+          containerPort: 6115
+          protocol: TCP
+        - name: a3-c2-main
+          containerPort: 5172
+          protocol: TCP
+        - name: a3-c2-aux
+          containerPort: 6172
+          protocol: TCP
+        - name: a3-c4-main
+          containerPort: 5144
+          protocol: TCP
+        - name: a3-c4-aux
+          containerPort: 6144
+          protocol: TCP
+        - name: a3-c9-main
+          containerPort: 5074
+          protocol: TCP
+        - name: a3-c9-aux
+          containerPort: 6074
+          protocol: TCP
+        - name: a4-c10-main
+          containerPort: 5061
+          protocol: TCP
+        - name: a4-c10-aux
+          containerPort: 6061
+          protocol: TCP
+        - name: a4-c4-main
+          containerPort: 5145
+          protocol: TCP
+        - name: a4-c4-aux
+          containerPort: 6145
+          protocol: TCP
+        - name: a5-c10-main
+          containerPort: 5062
+          protocol: TCP
+        - name: a5-c10-aux
+          containerPort: 6062
+          protocol: TCP
+        - name: a5-c6-main
+          containerPort: 5118
+          protocol: TCP
+        - name: a5-c6-aux
+          containerPort: 6118
+          protocol: TCP
+        - name: a6-c2-main
+          containerPort: 5175
+          protocol: TCP
+        - name: a6-c2-aux
+          containerPort: 6175
+          protocol: TCP
+        - name: a6-c4-main
+          containerPort: 5147
+          protocol: TCP
+        - name: a6-c4-aux
+          containerPort: 6147
+          protocol: TCP
+        - name: a6-c7-main
+          containerPort: 5105
+          protocol: TCP
+        - name: a6-c7-aux
+          containerPort: 6105
+          protocol: TCP
+        - name: a7-c4-main
+          containerPort: 5148
+          protocol: TCP
+        - name: a7-c4-aux
+          containerPort: 6148
+          protocol: TCP
+        - name: a7-c6-main
+          containerPort: 5120
+          protocol: TCP
+        - name: a7-c6-aux
+          containerPort: 6120
+          protocol: TCP
+        - name: a7-c7-main
+          containerPort: 5106
+          protocol: TCP
+        - name: a7-c7-aux
+          containerPort: 6106
+          protocol: TCP
+        - name: a8-c6-main
+          containerPort: 5121
+          protocol: TCP
+        - name: a8-c6-aux
+          containerPort: 6121
+          protocol: TCP
+        - name: a8-c9-main
+          containerPort: 5079
+          protocol: TCP
+        - name: a8-c9-aux
+          containerPort: 6079
+          protocol: TCP
+        - name: a9-c3-main
+          containerPort: 5164
+          protocol: TCP
+        - name: a9-c3-aux
+          containerPort: 6164
+          protocol: TCP
+        - name: a9-c7-main
+          containerPort: 5108
+          protocol: TCP
+        - name: a9-c7-aux
+          containerPort: 6108
+          protocol: TCP
+        - name: a9-c8-main
+          containerPort: 5094
+          protocol: TCP
+        - name: a9-c8-aux
+          containerPort: 6094
+          protocol: TCP
+---
+apiVersion: v1
+kind: Pod
+metadata:
+  name: fast4
+  labels:
+    app: distributed-devstone
+spec:
+  nodeName: gke-c1-default-pool-71129266-s4wh
+  containers:
+    - name: fast4-container
+      image: khenares/distributed-devstone-xdevs-java
+      command: ["/bin/sleep"]
+      args: ["infinity"]
+      ports:
+        - name: a10-c1-main
+          containerPort: 5193
+          protocol: TCP
+        - name: a10-c1-aux
+          containerPort: 6193
+          protocol: TCP
+        - name: a11-c10-main
+          containerPort: 5068
+          protocol: TCP
+        - name: a11-c10-aux
+          containerPort: 6068
+          protocol: TCP
+        - name: a11-c3-main
+          containerPort: 5166
+          protocol: TCP
+        - name: a11-c3-aux
+          containerPort: 6166
+          protocol: TCP
+        - name: a11-c4-main
+          containerPort: 5152
+          protocol: TCP
+        - name: a11-c4-aux
+          containerPort: 6152
+          protocol: TCP
+        - name: a11-c8-main
+          containerPort: 5096
+          protocol: TCP
+        - name: a11-c8-aux
+          containerPort: 6096
+          protocol: TCP
+        - name: a12-c1-main
+          containerPort: 5195
+          protocol: TCP
+        - name: a12-c1-aux
+          containerPort: 6195
+          protocol: TCP
+        - name: a12-c8-main
+          containerPort: 5097
+          protocol: TCP
+        - name: a12-c8-aux
+          containerPort: 6097
+          protocol: TCP
+        - name: a14-c10-main
+          containerPort: 5071
+          protocol: TCP
+        - name: a14-c10-aux
+          containerPort: 6071
+          protocol: TCP
+        - name: a1-c10-main
+          containerPort: 5058
+          protocol: TCP
+        - name: a1-c10-aux
+          containerPort: 6058
+          protocol: TCP
+        - name: a1-c6-main
+          containerPort: 5114
+          protocol: TCP
+        - name: a1-c6-aux
+          containerPort: 6114
+          protocol: TCP
+        - name: a1-c7-main
+          containerPort: 5100
+          protocol: TCP
+        - name: a1-c7-aux
+          containerPort: 6100
+          protocol: TCP
+        - name: a2-c10-main
+          containerPort: 5059
+          protocol: TCP
+        - name: a2-c10-aux
+          containerPort: 6059
+          protocol: TCP
+        - name: a2-c12-main
+          containerPort: 5031
+          protocol: TCP
+        - name: a2-c12-aux
+          containerPort: 6031
+          protocol: TCP
+        - name: a2-c14-main
+          containerPort: 5003
+          protocol: TCP
+        - name: a2-c14-aux
+          containerPort: 6003
+          protocol: TCP
+        - name: a2-c9-main
+          containerPort: 5073
+          protocol: TCP
+        - name: a2-c9-aux
+          containerPort: 6073
+          protocol: TCP
+        - name: a3-c11-main
+          containerPort: 5046
+          protocol: TCP
+        - name: a3-c11-aux
+          containerPort: 6046
+          protocol: TCP
+        - name: a3-c7-main
+          containerPort: 5102
+          protocol: TCP
+        - name: a3-c7-aux
+          containerPort: 6102
+          protocol: TCP
+        - name: a4-c3-main
+          containerPort: 5159
+          protocol: TCP
+        - name: a4-c3-aux
+          containerPort: 6159
+          protocol: TCP
+        - name: a4-c5-main
+          containerPort: 5131
+          protocol: TCP
+        - name: a4-c5-aux
+          containerPort: 6131
+          protocol: TCP
+        - name: a4-c9-main
+          containerPort: 5075
+          protocol: TCP
+        - name: a4-c9-aux
+          containerPort: 6075
+          protocol: TCP
+        - name: a5-c12-main
+          containerPort: 5034
+          protocol: TCP
+        - name: a5-c12-aux
+          containerPort: 6034
+          protocol: TCP
+        - name: a5-c2-main
+          containerPort: 5174
+          protocol: TCP
+        - name: a5-c2-aux
+          containerPort: 6174
+          protocol: TCP
+        - name: a5-c7-main
+          containerPort: 5104
+          protocol: TCP
+        - name: a5-c7-aux
+          containerPort: 6104
+          protocol: TCP
+        - name: a5-c9-main
+          containerPort: 5076
+          protocol: TCP
+        - name: a5-c9-aux
+          containerPort: 6076
+          protocol: TCP
+        - name: a6-c1-main
+          containerPort: 5189
+          protocol: TCP
+        - name: a6-c1-aux
+          containerPort: 6189
+          protocol: TCP
+        - name: a6-c12-main
+          containerPort: 5035
+          protocol: TCP
+        - name: a6-c12-aux
+          containerPort: 6035
+          protocol: TCP
+        - name: a7-c12-main
+          containerPort: 5036
+          protocol: TCP
+        - name: a7-c12-aux
+          containerPort: 6036
+          protocol: TCP
+        - name: a8-c11-main
+          containerPort: 5051
+          protocol: TCP
+        - name: a8-c11-aux
+          containerPort: 6051
+          protocol: TCP
+        - name: a8-c5-main
+          containerPort: 5135
+          protocol: TCP
+        - name: a8-c5-aux
+          containerPort: 6135
+          protocol: TCP
+---
+apiVersion: v1
+kind: Pod
+metadata:
+  name: slow0
+  labels:
+    app: distributed-devstone
+spec:
+  nodeName: gke-c1-default-pool-71129266-tzg4
+  containers:
+    - name: slow0-container
+      image: khenares/distributed-devstone-xdevs-java
+      command: ["/bin/sleep"]
+      args: ["infinity"]
+      ports:
+        - name: a10-c10-main
+          containerPort: 5067
+          protocol: TCP
+        - name: a10-c10-aux
+          containerPort: 6067
+          protocol: TCP
+        - name: a10-c9-main
+          containerPort: 5081
+          protocol: TCP
+        - name: a10-c9-aux
+          containerPort: 6081
+          protocol: TCP
+        - name: a11-c11-main
+          containerPort: 5054
+          protocol: TCP
+        - name: a11-c11-aux
+          containerPort: 6054
+          protocol: TCP
+        - name: a12-c4-main
+          containerPort: 5153
+          protocol: TCP
+        - name: a12-c4-aux
+          containerPort: 6153
+          protocol: TCP
+        - name: a13-c7-main
+          containerPort: 5112
+          protocol: TCP
+        - name: a13-c7-aux
+          containerPort: 6112
+          protocol: TCP
+        - name: a13-c9-main
+          containerPort: 5084
+          protocol: TCP
+        - name: a13-c9-aux
+          containerPort: 6084
+          protocol: TCP
+        - name: a14-c1-main
+          containerPort: 5197
+          protocol: TCP
+        - name: a14-c1-aux
+          containerPort: 6197
+          protocol: TCP
+        - name: a14-c11-main
+          containerPort: 5057
+          protocol: TCP
+        - name: a14-c11-aux
+          containerPort: 6057
+          protocol: TCP
+        - name: a14-c12-main
+          containerPort: 5043
+          protocol: TCP
+        - name: a14-c12-aux
+          containerPort: 6043
+          protocol: TCP
+        - name: a14-c3-main
+          containerPort: 5169
+          protocol: TCP
+        - name: a14-c3-aux
+          containerPort: 6169
+          protocol: TCP
+        - name: a5-c13-main
+          containerPort: 5020
+          protocol: TCP
+        - name: a5-c13-aux
+          containerPort: 6020
+          protocol: TCP
+        - name: a6-c11-main
+          containerPort: 5049
+          protocol: TCP
+        - name: a6-c11-aux
+          containerPort: 6049
+          protocol: TCP
+        - name: a8-c1-main
+          containerPort: 5191
+          protocol: TCP
+        - name: a8-c1-aux
+          containerPort: 6191
+          protocol: TCP
+        - name: a9-c1-main
+          containerPort: 5192
+          protocol: TCP
+        - name: a9-c1-aux
+          containerPort: 6192
+          protocol: TCP
+        - name: a9-c13-main
+          containerPort: 5024
+          protocol: TCP
+        - name: a9-c13-aux
+          containerPort: 6024
+          protocol: TCP
+        - name: a9-c5-main
+          containerPort: 5136
+          protocol: TCP
+        - name: a9-c5-aux
+          containerPort: 6136
+          protocol: TCP
+        - name: a9-c6-main
+          containerPort: 5122
+          protocol: TCP
+        - name: a9-c6-aux
+          containerPort: 6122
+          protocol: TCP
+---
+apiVersion: v1
+kind: Pod
+metadata:
+  name: slow1
+  labels:
+    app: distributed-devstone
+spec:
+  nodeName: gke-c1-default-pool-71129266-wkk7
+  containers:
+    - name: slow1-container
+      image: khenares/distributed-devstone-xdevs-java
+      command: ["/bin/sleep"]
+      args: ["infinity"]
+      ports:
+        - name: a10-c2-main
+          containerPort: 5179
+          protocol: TCP
+        - name: a10-c2-aux
+          containerPort: 6179
+          protocol: TCP
+        - name: a10-c8-main
+          containerPort: 5095
+          protocol: TCP
+        - name: a10-c8-aux
+          containerPort: 6095
+          protocol: TCP
+        - name: a11-c12-main
+          containerPort: 5040
+          protocol: TCP
+        - name: a11-c12-aux
+          containerPort: 6040
+          protocol: TCP
+        - name: a11-c2-main
+          containerPort: 5180
+          protocol: TCP
+        - name: a11-c2-aux
+          containerPort: 6180
+          protocol: TCP
+        - name: a12-c14-main
+          containerPort: 5013
+          protocol: TCP
+        - name: a12-c14-aux
+          containerPort: 6013
+          protocol: TCP
+        - name: a12-c6-main
+          containerPort: 5125
+          protocol: TCP
+        - name: a12-c6-aux
+          containerPort: 6125
+          protocol: TCP
+        - name: a13-c10-main
+          containerPort: 5070
+          protocol: TCP
+        - name: a13-c10-aux
+          containerPort: 6070
+          protocol: TCP
+        - name: a13-c14-main
+          containerPort: 5014
+          protocol: TCP
+        - name: a13-c14-aux
+          containerPort: 6014
+          protocol: TCP
+        - name: a13-c6-main
+          containerPort: 5126
+          protocol: TCP
+        - name: a13-c6-aux
+          containerPort: 6126
+          protocol: TCP
+        - name: a14-c4-main
+          containerPort: 5155
+          protocol: TCP
+        - name: a14-c4-aux
+          containerPort: 6155
+          protocol: TCP
+        - name: a14-c5-main
+          containerPort: 5141
+          protocol: TCP
+        - name: a14-c5-aux
+          containerPort: 6141
+          protocol: TCP
+        - name: a5-c1-main
+          containerPort: 5188
+          protocol: TCP
+        - name: a5-c1-aux
+          containerPort: 6188
+          protocol: TCP
+        - name: a6-c5-main
+          containerPort: 5133
+          protocol: TCP
+        - name: a6-c5-aux
+          containerPort: 6133
+          protocol: TCP
+        - name: a9-c10-main
+          containerPort: 5066
+          protocol: TCP
+        - name: a9-c10-aux
+          containerPort: 6066
+          protocol: TCP
+        - name: a9-c11-main
+          containerPort: 5052
+          protocol: TCP
+        - name: a9-c11-aux
+          containerPort: 6052
+          protocol: TCP
+        - name: a9-c12-main
+          containerPort: 5038
+          protocol: TCP
+        - name: a9-c12-aux
+          containerPort: 6038
+          protocol: TCP
+        - name: a9-c2-main
+          containerPort: 5178
+          protocol: TCP
+        - name: a9-c2-aux
+          containerPort: 6178
+          protocol: TCP
+---
+apiVersion: v1
+kind: Pod
+metadata:
+  name: slow2
+  labels:
+    app: distributed-devstone
+spec:
+  nodeName: gke-c1-default-pool-71129266-xhbl
+  containers:
+    - name: slow2-container
+      image: khenares/distributed-devstone-xdevs-java
+      command: ["/bin/sleep"]
+      args: ["infinity"]
+      ports:
+        - name: a11-c14-main
+          containerPort: 5012
+          protocol: TCP
+        - name: a11-c14-aux
+          containerPort: 6012
+          protocol: TCP
+        - name: a11-c7-main
+          containerPort: 5110
+          protocol: TCP
+        - name: a11-c7-aux
+          containerPort: 6110
+          protocol: TCP
+        - name: a11-c9-main
+          containerPort: 5082
+          protocol: TCP
+        - name: a11-c9-aux
+          containerPort: 6082
+          protocol: TCP
+        - name: a12-c11-main
+          containerPort: 5055
+          protocol: TCP
+        - name: a12-c11-aux
+          containerPort: 6055
+          protocol: TCP
+        - name: a13-c1-main
+          containerPort: 5196
+          protocol: TCP
+        - name: a13-c1-aux
+          containerPort: 6196
+          protocol: TCP
+        - name: a13-c11-main
+          containerPort: 5056
+          protocol: TCP
+        - name: a13-c11-aux
+          containerPort: 6056
+          protocol: TCP
+        - name: a13-c12-main
+          containerPort: 5042
+          protocol: TCP
+        - name: a13-c12-aux
+          containerPort: 6042
+          protocol: TCP
+        - name: a13-c8-main
+          containerPort: 5098
+          protocol: TCP
+        - name: a13-c8-aux
+          containerPort: 6098
+          protocol: TCP
+        - name: a14-c13-main
+          containerPort: 5029
+          protocol: TCP
+        - name: a14-c13-aux
+          containerPort: 6029
+          protocol: TCP
+        - name: a14-c2-main
+          containerPort: 5183
+          protocol: TCP
+        - name: a14-c2-aux
+          containerPort: 6183
+          protocol: TCP
+        - name: a14-c7-main
+          containerPort: 5113
+          protocol: TCP
+        - name: a14-c7-aux
+          containerPort: 6113
+          protocol: TCP
+        - name: a6-c6-main
+          containerPort: 5119
+          protocol: TCP
+        - name: a6-c6-aux
+          containerPort: 6119
+          protocol: TCP
+        - name: a6-c8-main
+          containerPort: 5091
+          protocol: TCP
+        - name: a6-c8-aux
+          containerPort: 6091
+          protocol: TCP
+        - name: a7-c1-main
+          containerPort: 5190
+          protocol: TCP
+        - name: a7-c1-aux
+          containerPort: 6190
+          protocol: TCP
+        - name: a7-c14-main
+          containerPort: 5008
+          protocol: TCP
+        - name: a7-c14-aux
+          containerPort: 6008
+          protocol: TCP
+        - name: a8-c14-main
+          containerPort: 5009
+          protocol: TCP
+        - name: a8-c14-aux
+          containerPort: 6009
+          protocol: TCP

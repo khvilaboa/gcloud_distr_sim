@@ -1,14 +1,9 @@
 filename;deployment_time;sim_time;pods_per_node
-data/fixed-75-perc-fast/HO_s-15_t-ChiSquaredDistribution-2_p1-1.xml;63.41886043548584;461.434;1-1
-data/fixed-75-perc-fast/HO_s-15_t-ChiSquaredDistribution-2_p1-1.xml;54.828059673309326;470.194;1-1
-data/fixed-75-perc-fast/HO_s-15_t-ChiSquaredDistribution-2_p1-1.xml;54.3724901676178;489.934;1-1
-data/fixed-75-perc-fast/HO_s-15_t-ChiSquaredDistribution-2_p2-1.xml;87.10853123664856;387.769;1-1-1
 data/fixed-75-perc-fast/HO_s-15_t-ChiSquaredDistribution-2_p1-1.xml;53.404306411743164;514.985;1-1
 data/fixed-75-perc-fast/HO_s-15_t-ChiSquaredDistribution-2_p2-1.xml;71.34113764762878;390.267;1-1-1
 data/fixed-75-perc-fast/HO_s-15_t-ChiSquaredDistribution-2_p3-1.xml;93.67835545539856;350.951;1-1-1-1
 data/fixed-75-perc-fast/HO_s-15_t-ChiSquaredDistribution-2_p4-1.xml;106.17235469818115;347.082;1-1-1-1-1
 data/fixed-75-perc-fast/HO_s-15_t-ChiSquaredDistribution-2_p5-1.xml;128.03171229362488;339.887;1-1-1-1-1-1
-data/fixed-75-perc-fast/HO_s-15_t-ChiSquaredDistribution-2_p6-1.xml;141.9092755317688;343.078;1-1-1-1-1-1-1
 data/fixed-75-perc-fast/HO_s-15_t-ChiSquaredDistribution-2_p6-1.xml;184.70131754875183;341.72;1-1-1-1-1-1-1
 data/fixed-75-perc-fast/HO_s-15_t-ChiSquaredDistribution-2_p7-1.xml;197.5243000984192;336.212;1-1-1-1-1-1-1-1
 data/fixed-75-perc-fast/HO_s-15_t-ChiSquaredDistribution-2_p8-1.xml;214.38765621185303;375.115;2-1-1-1-1-1-1-1
@@ -36,4 +31,4 @@ data/fixed-75-perc-fast/HO_s-15_t-ChiSquaredDistribution-2_p5-3.xml;180.95098233
 data/fixed-75-perc-fast/HO_s-15_t-ChiSquaredDistribution-2_p4-4.xml;182.12538123130798;335.956;1-1-1-1-1-1-1-1
 data/fixed-75-perc-fast/HO_s-15_t-ChiSquaredDistribution-2_p3-5.xml;192.22291445732117;363.885;1-1-1-1-1-1-1-1
 data/fixed-75-perc-fast/HO_s-15_t-ChiSquaredDistribution-2_p2-6.xml;199.8416941165924;386.531;1-1-1-1-1-1-1-1
-data/fixed-75-perc-fast/HO_s-15_t-ChiSquaredDistribution-2_p1-7.xml;215.21729803085327;493.705;1-1-1-1-1-1-1-1
+data/fixed-75-perc-fast/HO_s-15_t-ChiSquaredDistribution-2_p1-7.xml;143.7959921360016;471.199;1-1-1-1-1-1-1-1

@@ -1,0 +1,103 @@
+Name:               gke-c1-default-pool-2af1d2d7-176t
+Roles:              <none>
+Labels:             beta.kubernetes.io/arch=amd64
+                    beta.kubernetes.io/instance-type=n2-highmem-4
+                    beta.kubernetes.io/os=linux
+                    cloud.google.com/gke-boot-disk=pd-standard
+                    cloud.google.com/gke-container-runtime=containerd
+                    cloud.google.com/gke-nodepool=default-pool
+                    cloud.google.com/gke-os-distribution=cos
+                    cloud.google.com/machine-family=n2
+                    failure-domain.beta.kubernetes.io/region=us-central1
+                    failure-domain.beta.kubernetes.io/zone=us-central1-b
+                    kubernetes.io/arch=amd64
+                    kubernetes.io/hostname=gke-c1-default-pool-2af1d2d7-176t
+                    kubernetes.io/os=linux
+                    node.kubernetes.io/instance-type=n2-highmem-4
+                    topology.gke.io/zone=us-central1-b
+                    topology.kubernetes.io/region=us-central1
+                    topology.kubernetes.io/zone=us-central1-b
+Annotations:        container.googleapis.com/instance_id: 2944162855845651110
+                    csi.volume.kubernetes.io/nodeid:
+                      {"pd.csi.storage.gke.io":"projects/distributed-devstone/zones/us-central1-b/instances/gke-c1-default-pool-2af1d2d7-176t"}
+                    node.alpha.kubernetes.io/ttl: 0
+                    node.gke.io/last-applied-node-labels:
+                      cloud.google.com/gke-boot-disk=pd-standard,cloud.google.com/gke-container-runtime=containerd,cloud.google.com/gke-nodepool=default-pool,cl...
+                    volumes.kubernetes.io/controller-managed-attach-detach: true
+CreationTimestamp:  Thu, 09 Sep 2021 12:07:00 +0200
+Taints:             <none>
+Unschedulable:      false
+Lease:
+  HolderIdentity:  gke-c1-default-pool-2af1d2d7-176t
+  AcquireTime:     <unset>
+  RenewTime:       Thu, 09 Sep 2021 13:46:31 +0200
+Conditions:
+  Type                          Status  LastHeartbeatTime                 LastTransitionTime                Reason                          Message
+  ----                          ------  -----------------                 ------------------                ------                          -------
+  FrequentKubeletRestart        False   Thu, 09 Sep 2021 13:42:11 +0200   Thu, 09 Sep 2021 12:07:01 +0200   NoFrequentKubeletRestart        kubelet is functioning properly
+  FrequentDockerRestart         False   Thu, 09 Sep 2021 13:42:11 +0200   Thu, 09 Sep 2021 12:07:01 +0200   NoFrequentDockerRestart         docker is functioning properly
+  FrequentContainerdRestart     False   Thu, 09 Sep 2021 13:42:11 +0200   Thu, 09 Sep 2021 12:07:01 +0200   NoFrequentContainerdRestart     containerd is functioning properly
+  KernelDeadlock                False   Thu, 09 Sep 2021 13:42:11 +0200   Thu, 09 Sep 2021 12:07:01 +0200   KernelHasNoDeadlock             kernel has no deadlock
+  ReadonlyFilesystem            False   Thu, 09 Sep 2021 13:42:11 +0200   Thu, 09 Sep 2021 12:07:01 +0200   FilesystemIsNotReadOnly         Filesystem is not read-only
+  CorruptDockerOverlay2         False   Thu, 09 Sep 2021 13:42:11 +0200   Thu, 09 Sep 2021 12:07:01 +0200   NoCorruptDockerOverlay2         docker overlay2 is functioning properly
+  FrequentUnregisterNetDevice   False   Thu, 09 Sep 2021 13:42:11 +0200   Thu, 09 Sep 2021 12:07:01 +0200   NoFrequentUnregisterNetDevice   node is functioning properly
+  NetworkUnavailable            False   Thu, 09 Sep 2021 12:07:15 +0200   Thu, 09 Sep 2021 12:07:15 +0200   RouteCreated                    RouteController created a route
+  MemoryPressure                False   Thu, 09 Sep 2021 13:44:49 +0200   Thu, 09 Sep 2021 12:34:13 +0200   KubeletHasSufficientMemory      kubelet has sufficient memory available
+  DiskPressure                  False   Thu, 09 Sep 2021 13:44:49 +0200   Thu, 09 Sep 2021 12:06:53 +0200   KubeletHasNoDiskPressure        kubelet has no disk pressure
+  PIDPressure                   False   Thu, 09 Sep 2021 13:44:49 +0200   Thu, 09 Sep 2021 12:06:53 +0200   KubeletHasSufficientPID         kubelet has sufficient PID available
+  Ready                         True    Thu, 09 Sep 2021 13:44:49 +0200   Thu, 09 Sep 2021 12:07:12 +0200   KubeletReady                    kubelet is posting ready status. AppArmor enabled
+Addresses:
+  InternalIP:   10.128.15.198
+  ExternalIP:   35.192.135.235
+  InternalDNS:  gke-c1-default-pool-2af1d2d7-176t.c.distributed-devstone.internal
+  Hostname:     gke-c1-default-pool-2af1d2d7-176t.c.distributed-devstone.internal
+Capacity:
+  attachable-volumes-gce-pd:  127
+  cpu:                        4
+  ephemeral-storage:          98868448Ki
+  hugepages-1Gi:              0
+  hugepages-2Mi:              0
+  memory:                     32889576Ki
+  pods:                       110
+Allocatable:
+  attachable-volumes-gce-pd:  127
+  cpu:                        3920m
+  ephemeral-storage:          47093746742
+  hugepages-1Gi:              0
+  hugepages-2Mi:              0
+  memory:                     29094632Ki
+  pods:                       110
+System Info:
+  Machine ID:                 fc4a2d91ef87a8b46689a726d004ab6d
+  System UUID:                fc4a2d91-ef87-a8b4-6689-a726d004ab6d
+  Boot ID:                    89d99498-40be-4634-a582-f37b6be741fc
+  Kernel Version:             5.4.120+
+  OS Image:                   Container-Optimized OS from Google
+  Operating System:           linux
+  Architecture:               amd64
+  Container Runtime Version:  containerd://1.4.4
+  Kubelet Version:            v1.20.8-gke.2100
+  Kube-Proxy Version:         v1.20.8-gke.2100
+PodCIDR:                      10.0.6.0/24
+PodCIDRs:                     10.0.6.0/24
+ProviderID:                   gce://distributed-devstone/us-central1-b/gke-c1-default-pool-2af1d2d7-176t
+Non-terminated Pods:          (6 in total)
+  Namespace                   Name                                                         CPU Requests  CPU Limits  Memory Requests  Memory Limits  AGE
+  ---------                   ----                                                         ------------  ----------  ---------------  -------------  ---
+  default                     fast0                                                        0 (0%)        0 (0%)      0 (0%)           0 (0%)         2m38s
+  kube-system                 fluentbit-gke-7vjb4                                          100m (2%)     0 (0%)      200Mi (0%)       500Mi (1%)     99m
+  kube-system                 gke-metrics-agent-wpl29                                      3m (0%)       0 (0%)      50Mi (0%)        50Mi (0%)      99m
+  kube-system                 kube-proxy-gke-c1-default-pool-2af1d2d7-176t                 100m (2%)     0 (0%)      0 (0%)           0 (0%)         98m
+  kube-system                 pdcsi-node-4qckd                                             10m (0%)      0 (0%)      20Mi (0%)        100Mi (0%)     99m
+  kube-system                 stackdriver-metadata-agent-cluster-level-5b86bc6755-4nwl5    98m (2%)      48m (1%)    202Mi (0%)       202Mi (0%)     99m
+Allocated resources:
+  (Total limits may be over 100 percent, i.e., overcommitted.)
+  Resource                   Requests    Limits
+  --------                   --------    ------
+  cpu                        311m (7%)   48m (1%)
+  memory                     472Mi (1%)  852Mi (2%)
+  ephemeral-storage          0 (0%)      0 (0%)
+  hugepages-1Gi              0 (0%)      0 (0%)
+  hugepages-2Mi              0 (0%)      0 (0%)
+  attachable-volumes-gce-pd  0           0
+Events:                      <none>

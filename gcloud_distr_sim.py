@@ -7,6 +7,7 @@ import time
 from lxml import etree
 import os
 import sys
+import time
 
 
 class YAMLGenerator:
@@ -246,8 +247,9 @@ if __name__ == '__main__':
     # Atomics launch is executed as background processes, this is a delay to ensure initialization completion
     # They may appear some "Connection refused" errors when initializing if this time is too low, probably on
     # the last deployed pods (the suitable time depends on the amount of atomics/pods)
-    print("\nWaiting for atomics to be completely deployed...")
-    time.sleep(150)
+    waiting_sec = max(800, int(3.5*len(yaml_gen.pods)))
+    print("\nWaiting for atomics to be completely deployed... (%d s)" % waiting_sec)
+    time.sleep(waiting_sec)
 
     print("\nDeployment completed.")
     print("Time: %.2fs" % deployment_time)
@@ -255,6 +257,7 @@ if __name__ == '__main__':
     coordinator_pod = list(sorted(yaml_gen.pods))[0]
     print("\nLaunching simulation coordinator in %s..." % coordinator_pod)
     print(CMD_LAUNCH_COORDINATOR.format(pod=coordinator_pod, jar=FILE_XDEVS_JAR, cp=CLASS_LAUNCH_NODE, xml_file=os.path.basename(fn)))
+    t_before_launch = time.time()
     sim_out = subprocess.getoutput(
         CMD_LAUNCH_COORDINATOR.format(pod=coordinator_pod, jar=FILE_XDEVS_JAR, cp=CLASS_LAUNCH_NODE, xml_file=os.path.basename(fn)))
     #CMD_LAUNCH_COORDINATOR = "kubectl exec {pod} -- bash -c 'java -cp {jar} {cp} {xml_file}'"
@@ -263,6 +266,8 @@ if __name__ == '__main__':
         print("SIMOUT: ", sim_out)
         sim_time = re.search("TIME: ([0-9.]+)", sim_out).group(1)
     except AttributeError:
+        print("Error extracting simulation time (after %.2fs of simulation)" % (time.time()-t_before_launch))
+        print("Simulation output: ", sim_out)
         raise RuntimeError("Simulation error.")
 
     print("Simulation completed! :)")
